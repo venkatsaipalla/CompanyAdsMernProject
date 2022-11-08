@@ -6,6 +6,7 @@ import "./AdsContainer.css";
 
 const AdsContainer = () => {
   const getData = async () => {
+    //geting all details after populating
     const { data } = await axios.get(`http://localhost:3004/api/ads/all`);
     setData(data);
   };
