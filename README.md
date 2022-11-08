@@ -6,6 +6,6 @@
 
   > node server
   
-* Now Go to client folder and run index.js
+* Now change the directory to client folder and run below command in terminal
 
   > npm start
