@@ -5,7 +5,8 @@ const router = express.Router();
 const Addshow = require('../../models/Ads')
 const Company = require('../../models/Company')
 
-
+//All are public routes
+//Adding Ads details 
 router.post("/", (req, res)=>{
     const {_id,companyId,primaryText,headline,description,cta,imageUrl}=req.body;
     add = new Addshow({
@@ -17,6 +18,7 @@ router.post("/", (req, res)=>{
 
 })
 
+//Adding Comoany details
 router.post("/company", (req, res)=>{
     const {_id,name,url}=req.body;
     company = new Company({
@@ -28,6 +30,7 @@ router.post("/company", (req, res)=>{
 
 })
 
+//Getting all the details by populating both company and Ads collections
 router.get("/all",(req, res)=>{
     Addshow.find()
     .populate("companyId",["name", "url"])
