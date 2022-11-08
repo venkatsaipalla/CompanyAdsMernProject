@@ -9,7 +9,7 @@ import AdsContainer from './components/AdsContainer'
 />
 function App() {
   return (
-    <div class="full-screen">
+    <div class="full-screen" target="_blank">
   <div>
     <h1>Company Ads</h1>
     <br/>
