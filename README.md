@@ -16,3 +16,20 @@ https://user-images.githubusercontent.com/72677771/200599187-051c291a-5991-491c-
 
  ####
 # Youtube Link : https://www.youtube.com/watch?v=UKqSJT4ynyA
+
+
+# Adding Ads details 
+
+Post request : http://localhost:3004/api/ads/
+
+Note : Send header {Content-Type:application/json}
+
+# Adding Company details
+
+Post request : http://localhost:3004/api/ads/company
+
+Note : Send header {Content-Type:application/json}
+
+# Getting all Details
+
+Hit http://localhost:3004/api/ads/all to get all details after populating
