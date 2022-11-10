@@ -32,6 +32,7 @@ router.post("/company", (req, res)=>{
 
 //Getting all the details by populating both company and Ads collections 
 // we will call this API in client/src/components/AdsContainer.js file and we will filter the data according to the search
+//Search API
 router.get("/all",(req, res)=>{
     Addshow.find()
     .populate("companyId",["name", "url"])
