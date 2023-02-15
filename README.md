@@ -29,7 +29,7 @@ Note : Send header {Content-Type:application/json}
 
 Post request : http://localhost:3004/api/ads/company
 
-Note : Send header {Content-Type:application/json}
+Note : Set header as {Content-Type:application/json}
 
 # Getting all Details
 
